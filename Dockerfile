@@ -1,7 +1,7 @@
 # Set the base image to ubuntu latest
 FROM ubuntu
 
-# File autho / maintainer
+# File author / maintainer
 MAINTAINER Johnny Antonsen <johnny@jumpingmushroom.com>
 
 # Update the repository sources list
@@ -11,7 +11,7 @@ RUN apt-get update
 RUN apt-get -y install wget curl
 
 # Wget the installation bash script
-RUN wget i.jpillora.com/cloud-torrent
+RUN wget http://i.jpillora.com/cloud-torrent
 
 # Make sure it's executable
 RUN chmod +x cloud-torrent
