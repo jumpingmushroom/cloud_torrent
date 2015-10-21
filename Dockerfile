@@ -1,4 +1,4 @@
-et the base image to ubuntu latest
+# Set the base image to ubuntu latest
 FROM ubuntu
 
 # File autho / maintainer
